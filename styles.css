@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 100%;
+}
+
+#principal {
+  background-image: url(./assets/mark-cruz-w3-zaydSNRY-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  #principal {
+    background-image: url(./assets/mark-cruz-w3-zaydSNRY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.main__box {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .main__box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main__box-left {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  padding: 20px;
+}
+.form__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__box label {
+  padding: 10px 0;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+button {
+  margin-top: 15px;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.2em;
+  background-color: rgb(117, 119, 121);
+  color: white;
+}
+
+.main__box-right {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+
+input {
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: rgb(235, 240, 240);
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: flex-end;
+}
